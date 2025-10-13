@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <title>Reservation Hotel Room</title>
+    <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Reservation Hotel Room</h1>
+
+      <form action="#" method="post">
+        <!-- Personal Data -->
+        <fieldset>
+          <legend>Personal Data</legend>
+          <ol>
+            <li>
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" />
+            </li>
+            <li>
+              <label for="gender">Gender</label>
+              <input type="text" id="gender" name="gender" />
+            </li>
+            <li>
+              <label for="email">Email Address</label>
+              <input type="text" id="email" name="email" />
+            </li>
+            <li>
+              <label for="telp">Telp Number</label>
+              <input type="text" id="telp" name="telp" />
+            </li>
+          </ol>
+        </fieldset>
+
+        <!-- Reservation Room form -->
+        <h2>Reservation Room Form</h2>
+        <ol class="form-list">
+          <li>
+            <label for="reservator">Reservator Name</label>
+            <input type="text" id="reservator" name="reservator" />
+          </li>
+          <li>
+            <label for="bookdate">Booking Date</label>
+            <!-- XHTML 1.0: gunakan text sebagai placeholder tanggal -->
+            <input type="text" id="bookdate" name="bookdate" />
+          </li>
+          <li>
+            <label for="roomtype">Room Type</label>
+            <select id="roomtype" name="roomtype">
+              <option value="deluxe">Deluxe</option>
+              <option value="superior">Superior</option>
+              <option value="suite">Suite</option>
+            </select>
+          </li>
+          <li>
+            <label for="bedtype">Bed Type</label>
+            <select id="bedtype" name="bedtype">
+              <option value="single">Single bed</option>
+              <option value="double">Double bed</option>
+              <option value="twin">Twin bed</option>
+            </select>
+          </li>
+          <li class="radio-row">
+            <span class="label">Breakfast</span>
+            <span class="radio-group">
+              <input type="radio" id="bf-yes" name="breakfast" value="with" checked="checked" />
+              <label for="bf-yes">With Breakfast</label>
+              <input type="radio" id="bf-no" name="breakfast" value="without" />
+              <label for="bf-no">Without Breakfast</label>
+            </span>
+          </li>
+        </ol>
+
+        <p class="actions">
+          <input type="submit" value="Submit" />
+          <input type="reset" value="Reset" />
+        </p>
+      </form>
+    </div>
+  </body>
+</html>

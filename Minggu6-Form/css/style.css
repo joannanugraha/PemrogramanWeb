@@ -1,0 +1,141 @@
+/* Reset ringan agar konsisten */
+html, body, h1, h2, p, ol, li, fieldset, legend, label {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font: 16px/1.5 Arial, Helvetica, sans-serif;
+  color: #222;
+  background: #f6f7fb;
+}
+
+.container {
+  max-width: 760px;
+  margin: 32px auto;
+  padding: 0 16px;
+}
+
+h1 {
+  font-size: 28px;
+  margin: 0 0 16px;
+  text-align: center;
+  color: #1d2a4d;
+}
+
+h2 {
+  font-size: 20px;
+  margin: 20px 0 8px;
+  color: #1d2a4d;
+}
+
+/* Form & fieldset */
+form {
+  background: #ffffff;
+  border: 1px solid #d8dbe2;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+
+fieldset {
+  border: 1px solid #c9cfdd;
+  border-radius: 6px;
+  padding: 12px 14px 6px;
+  margin-bottom: 16px;
+  background: #fbfcff;
+}
+
+legend {
+  font-weight: bold;
+  padding: 0 6px;
+  color: #24345a;
+}
+
+/* Ordered list as rows */
+ol {
+  list-style: decimal;
+  margin-left: 22px;
+}
+
+.form-list {
+  list-style: decimal;
+  margin-left: 22px;
+}
+
+/* Row layout */
+li {
+  margin: 10px 0;
+}
+
+label,
+span.label {
+  display: inline-block;
+  width: 180px;          /* sejajarkan label */
+  vertical-align: top;
+  color: #334;
+}
+
+input[type="text"],
+select {
+  width: 320px;
+  max-width: 100%;
+  border: 1px solid #b9c2d0;
+  border-radius: 4px;
+  padding: 6px 8px;
+  background: #fff;
+}
+
+input[type="text"]:focus,
+select:focus {
+  outline: none;
+  border-color: #5a84e8;
+  box-shadow: 0 0 0 3px rgba(90,132,232,0.15);
+}
+
+/* Radio group */
+.radio-row .radio-group {
+  display: inline-block;
+  width: 320px;
+}
+
+.radio-row .radio-group input[type="radio"] {
+  margin-right: 4px;
+  margin-left: 0;
+}
+
+.radio-row .radio-group label {
+  width: auto;           /* label radio tidak perlu lebar tetap */
+  margin-right: 16px;
+}
+
+/* Actions */
+.actions {
+  text-align: right;
+  margin-top: 12px;
+}
+
+.actions input[type="submit"],
+.actions input[type="reset"] {
+  border: 1px solid #375bd2;
+  background: #3f6ae0;
+  color: #fff;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-left: 8px;
+}
+
+.actions input[type="reset"] {
+  border-color: #b5bdc9;
+  background: #d7dbe3;
+  color: #233;
+}
+
+.actions input[type="submit"]:hover {
+  background: #355fd0;
+}
+
+.actions input[type="reset"]:hover {
+  background: #c8cdd8;
+}
